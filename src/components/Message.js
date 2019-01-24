@@ -1,0 +1,37 @@
+import React, { Component } from 'react'
+
+class Message extends Component {
+
+  render() {
+    return (
+      <div className="row message read">
+        <div className="col-1">
+          <div className="row">
+            <div className="col-2">
+              <input type="radio" name="message" />
+            </div>
+          </div>
+        </div>
+        <div className="col-5">
+        <span className="text-danger"> Name: </span>
+        </div>
+        <div className="col-5">
+          <div className="row message-body">
+            <div className="col-11 col-offset-1">
+            <span className="text-danger"> Message: </span>
+            </div>
+          </div>
+        </div>
+        <div className="col-1">
+          <button className="btn btn-default" >
+            <i className="fa fa-trash-o"></i>
+          </button>
+        </div>
+      </div>
+
+
+    )
+  }
+}
+
+export default Message

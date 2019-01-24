@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <MessageList messages={this.state.messages} />
+          <MessageList messages={this.state.messages} postServer={this.postServer} deleteServer={this.deleteServer} patchServer={this.patchServer}/>
         </div>
       </div>
     );

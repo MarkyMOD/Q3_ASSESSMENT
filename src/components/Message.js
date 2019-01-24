@@ -8,7 +8,7 @@ class Message extends Component {
         <div className="col-1">
           <div className="row">
             <div className="col-2">
-              <input type="radio" name="message" />
+              <input type="radio" name="message" onChange={e => this.props.updateRoute(this.props.id)}/>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ class Message extends Component {
           </div>
         </div>
         <div className="col-1">
-          <button className="btn btn-default" >
+          <button className="btn btn-default" onClick={e => this.props.deleteRoute(this.props.id, e)}>
             <i className="fa fa-trash-o"></i>
           </button>
         </div>

@@ -14,11 +14,13 @@ class Message extends Component {
         </div>
         <div className="col-5">
         <span className="text-danger"> Name: </span>
+        {this.props.name}
         </div>
         <div className="col-5">
           <div className="row message-body">
             <div className="col-11 col-offset-1">
             <span className="text-danger"> Message: </span>
+              {this.props.message}
             </div>
           </div>
         </div>

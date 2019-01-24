@@ -55,7 +55,6 @@ class App extends Component {
       }
     })
     const data = await response.json()
-    console.log("data", data)
     const clone = this.state.messages.filter(message => message.id !== id)
     this.setState({messages: [...clone]})
   }
@@ -63,7 +62,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <div className="container">
+          <MessageList messages={this.state.messages} />
+        </div>
       </div>
     );
   }
